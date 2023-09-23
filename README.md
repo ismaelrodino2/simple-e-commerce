@@ -24,3 +24,6 @@ To run this project, you'll need to set up environment variables related to Stri
 
  - yarn or npm i
  - yarn dev or npm run dev
+
+### Sample
+View a sample here: https://e-commerce-black-seven.vercel.app/
