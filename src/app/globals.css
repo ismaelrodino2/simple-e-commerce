@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .logo {
+    @apply text-4xl leading-[54px] font-normal font-poppins;
+  }
+
+  /* Headings */
+  h1,
+  h2,
+  h3 {
+    @apply font-inter font-medium;
+  }
+
+  h1 {
+    @apply text-4xl leading-[100%];
+  }
+
+  h2 {
+    @apply text-2xl  leading-[100%];
+  }
+
+  h3 {
+    @apply text-xl  leading-[100%];
+  }
+
+  /* Paragraphs */
+  p {
+    @apply font-inter font-normal text-xs leading-4;
+  }
+
+  /* Navigation items */
+  .nav-item {
+    @apply font-medium font-inter text-xs leading-4 text-blue800;
+  }
+
+  /* Login button */
+  .login-button {
+    @apply font-inter font-medium text-sm leading-[100%];
+  }
+
+  /* Get started header title */
+  .get-started-header {
+    @apply font-merriweather font-normal text-[26px] leading-[125%] tracking-wider text-white;
+  }
+
+  /* Header for cards */
+  .card-header {
+    @apply font-lora font-semibold text-xl leading-[28px];
+  }
+}
+
+.overflow::-webkit-scrollbar,
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-track {
+  height: 8px; /* Change width to height */
+  border: none;
+  background: #92b3c9 !important;
+}
+
+.overflow::-webkit-scrollbar-button,
+::-webkit-scrollbar-track-piece,
+::-webkit-scrollbar-corner,
+::-webkit-resizer {
+  display: none;
+}
+
+.overflow::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.5); /* Adjust the vertical offset value */
+
+  background-color: #f7dec9 !important;
+}
+
+.overflow::-webkit-scrollbar-track {
+  background-image: url("/images/scroll.png") !important; /*aqui ta o erro */
+
+  background-repeat: repeat-x; /* Change repeat-y to repeat-x */
+  background-size: contain;
+  margin-left: 80px;
+  margin-right: 80px;
+}
